@@ -9,4 +9,5 @@ mako files
 Notes:
 - I have assumed the file storage for the json files in a production setting would be in AWS S3
 - Read and create temp views from the files using Pyspark
-- Use SPARL SQL to transform and produce final result
+- Use SPARK SQL to transform and produce final result
+- If the two input files can be placed in a S3 bucket the file paths would have to be changed in the pyspark.py file and can be run via databricks too
