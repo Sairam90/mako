@@ -1,7 +1,7 @@
 # mako
 
 
-- Download all files and cd into location of docker-compose file
+- Download and extract from the **zip file** and cd into location of docker-compose file
 - start the container using docker-compose up -d
 - Execute the pyspark script
 - Result_final.csv is the result I have produced by running on Databricks
