@@ -1,5 +1,5 @@
 # mako
-mako files
+
 
 - Download all files and cd into location of docker-compose file
 - start the container using docker-compose up -d
