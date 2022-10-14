@@ -1,0 +1,6 @@
+1.I have not used a specific DB - Instead I would use a datalake store like AWS S3 to store the JSON files and form tables whose metadata would be stored in a catalog such as the Hive Metastore
+2.Using Pyspark to form create temp views of the json files
+3.Create separate CTEs for each time (window) - 5s, 1m, 30m and 60m
+	- ex: q_5s , q_1m, q_30m, q_60m
+	- Narrow down the results by filtering for time ranges between [eventimestamp - event_timestamp + (window)] for each window while joininng both views
+	- Use combination of rank and row_number window functions to identify the when_timestamp closest to each window(5s, 1m, 30m and 60m) and the last record respectively
